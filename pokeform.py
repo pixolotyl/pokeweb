@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/pokeinfo", methods=['GET'])
 def pokeinfo(name):
-    return
+    return render_template('pokeinfo.html')
 
 if __name__ == "__main__":
     app.run()
