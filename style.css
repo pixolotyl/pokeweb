@@ -4,3 +4,19 @@
   font-family: 'Titillium Web', sans-serif;
   background-color: #369af6;
 }
+.mew{
+  width: 250px;
+  margin: auto;
+}
+.title{
+  width: 125px;
+  margin: auto;
+}
+.subtitle{
+  width: 178px;
+  margin: auto;
+}
+.form{
+  width: 240px;
+  margin: auto;
+}
