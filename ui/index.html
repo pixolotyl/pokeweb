@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
 <link rel="stylesheet" href="style.css">
   <head>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <!-- Setting font to Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,11 +29,8 @@
     <br>
     <!-- Creating the input box -->
     <div class="input">
-      <form name="pokemon" action="pokeform.py" method="GET">
-        <label for="name">Which Pokemon are you looking up?</label><br>
-        <input type="text" id="name" name="name"><br>
-        <input type="button" value="See Info">
-      </form>
+      <input type="text" id="pokemon">
+      <button id="search" onclick="revealInfo()">Get Info</button>
     </div>
   </body>
 </html>
