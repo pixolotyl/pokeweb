@@ -1,6 +1,6 @@
 from flask import Flask, send_from_directory, redirect, url_for, request, abort
 import csv
-
+import json
 
 ## Creating a server
 app = Flask(__name__)
@@ -12,7 +12,8 @@ def pokeinfo(name):
     with open(file, "r") as pokedict:
         for line in csv.DictReader(pokedict):
             if name.lower() == line["name"].lower():
-                return line
+                msg = json.dumps(line)
+                return msg
     return f"Sorry, could not find a Pokemon named {name}"
 
 @app.route('/ui/<path>')

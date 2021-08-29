@@ -1,5 +1,7 @@
+
 function callback(msg) {
-	alert(msg)
+	var pokeinfo = JSON.stringify(msg)
+	document.getElementById("pokeinfo").innerHTML = pokeinfo
 }
 
 function revealInfo() {
