@@ -1,14 +1,22 @@
 from flask import Flask, send_from_directory, redirect, url_for, request, abort
+import csv
 
+
+## Creating a server
 app = Flask(__name__)
 
 @app.route("/api/<name>")
 def pokeinfo(name):
-    return f"hello {name}!"
+    ## Grabbing the info to be displayed from the csv
+    file = "pokedex.csv"
+    with open(file, "r") as pokedict:
+        for line in csv.DictReader(pokedict):
+            if name.lower() == line["name"].lower():
+                return line
+    return f"Sorry, could not find a Pokemon named {name}"
 
 @app.route('/ui/<path>')
 def show_ui(path):
-    """ The UI is stored behind the /ui path.  Doing this, we can protect against path traversal attacks """
     return send_from_directory('../ui', path)
 
 if __name__ == "__main__":
