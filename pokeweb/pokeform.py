@@ -12,9 +12,9 @@ def pokeinfo(name):
     with open(file, "r") as pokedict:
         for line in csv.DictReader(pokedict):
             if name.lower() == line["name"].lower():
-                msg = json.dumps(line)
+                msg = line
                 return msg
-    return f"Sorry, could not find a Pokemon named {name}"
+    return "Hello"
 
 @app.route('/ui/<path>')
 def show_ui(path):
