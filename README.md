@@ -1,1 +1,1 @@
-# Creating a mock website that can be used to lookup information about many Pokemon
+# Creating a mock website that can be used to lookup information about many different Pokemon
