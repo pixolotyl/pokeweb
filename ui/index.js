@@ -1,9 +1,12 @@
-
 function callback(msg) {
+	// Function to format and display pokemon info from python file
+	// If typo/not a valid pokemon, the python file returns a string
 	if (typeof msg === 'string') {
 		document.getElementById("pokeinfo").innerHTML = "Sorry, we couldn't find a Pokemon with that name."
 	}
+	// If a valid pokemon name, it returns an object
 	else {
+		// There's probably a much better way to do this
 		document.getElementById("pokeinfo").innerHTML = '<table>' + 
 														'<tr>' +
 														'<th>Name</th>' + 
@@ -93,15 +96,19 @@ function callback(msg) {
 	}
 };
 
+
+// To get the return key to search as well
 var poke = document.getElementById("pokemon");
 	poke.addEventListener("keyup", function(event) {
     event.preventDefault();
+    // Return key is 13
     if (event.keyCode === 13) {
         document.getElementById("search").click();
     }
 });
 
 function revealInfo() {
+	// Communicating through the API ??? to trigger the python pokeinfo function
 	var pokemon = document.getElementById("pokemon").value
 	$.get("http://127.0.0.1:5000/api/" + pokemon,callback);
 };

@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <link rel="stylesheet" href="style.css">
   <head>
+    <!-- Using jquery for JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <!-- Setting font to Google Font -->
@@ -28,11 +29,14 @@
     <!-- Creating the input box -->
     <div class="input">
       <input type="text" id="pokemon">
+      <!-- Button triggers JS function -->
       <button id="search" onclick="revealInfo()">Get Info!</button>
     </div><br>
+    <!-- Default text to give direction -->
     <div class="info">
-      <p id="pokeinfo">Type the Pokemon's name in the box and hit "Get Info" to display the stats here.</p>
+      <p id="pokeinfo">Type the Pokemon's name in the box and hit "Get Info" or return/enter to display the stats here.</p>
     </div>
+    <!-- Loading JS last so return key function works -->
     <script src="index.js"></script>
   </body>
 </html>
