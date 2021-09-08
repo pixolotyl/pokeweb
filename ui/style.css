@@ -5,9 +5,31 @@
   background-color: #369af6;
 }
 
+.imgContainer {
+  float: left;
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+}
+
 .mew {
-  width: 250px;
-  margin: auto;
+  width: 60%;
+  margin-top: 30px;
+}
+
+.snorlax {
+  width: 60%;
+  margin-top: 50px;
+}
+
+.skitty {
+  width: 80%;
+  margin-top: 5px;
+}
+
+.gifs {
+  content: "";
+  clear: both;
 }
 
 .title {
@@ -40,7 +62,7 @@
 
 .input [type=button] {
   background-color: #ADD8E6;
-  border: none;
+  border: 1px solid black;
   padding: 2px 5px;
 }
 
@@ -49,10 +71,15 @@
   margin: auto;
 }
 
+#pokeinfo {
+  padding: 5px 5px;
+  border: 2px solid white;
+  background-color: #ADD8E6;
+}
+
 table, th, td {
   border: 1px solid black;
-  width:  75%;
   margin: auto;
   padding: 2px 5px;
-  background-color: #CBC3E3;
+  background-color: whitesmoke;
 }

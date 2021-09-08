@@ -13,9 +13,17 @@
     <title> PokeWeb </title>
   </head>
   <body>
-    <!-- Displaying picture of Mew -->
-    <div class="mew">
-      <img src="mew.gif" alt="Mew GIF" style="width:250px;height:250px">
+    <!-- Displaying gifs of Pokemon-->
+    <div class="gifs">
+      <div class="imgContainer">
+        <img class ="mew" src="mew.gif" alt="Mew GIF">
+      </div>
+      <div class="imgContainer">
+        <img class="snorlax" src="snorlax.gif" alt="Snorlax GIF">
+      </div>
+      <div class="imgContainer">
+        <img class="skitty" src="skitty.gif" alt="Skitty GIF">
+      </div>
     </div>
     <!-- Displaying title -->
     <div class="title">
@@ -34,7 +42,7 @@
     </div><br>
     <!-- Default text to give direction -->
     <div class="info">
-      <p id="pokeinfo">Type the Pokemon's name in the box and hit "Get Info" or return/enter to display the stats here.</p>
+      <p id="pokeinfo">Type the Pokemon's name in the box and hit "Get Info!" or the return/enter key to display the stats here.</p>
     </div>
     <!-- Loading JS last so return key function works -->
     <script src="index.js"></script>
