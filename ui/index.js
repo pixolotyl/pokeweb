@@ -91,10 +91,17 @@ function callback(msg) {
 														'</tr>' +
 														'</table>'
 	}
-}
+};
+
+var poke = document.getElementById("pokemon");
+	poke.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("search").click();
+    }
+});
 
 function revealInfo() {
 	var pokemon = document.getElementById("pokemon").value
 	$.get("http://127.0.0.1:5000/api/" + pokemon,callback);
-}
-
+};
