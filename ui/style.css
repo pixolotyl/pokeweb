@@ -84,9 +84,24 @@ body {
   background-color: #ADD8E6;
 }
 
-table, th, td {
+table {
+  width: 100%;
   border: 1px solid black;
+  border-collapse: collapse;
   margin: auto;
   padding: 2px 5px;
   background-color: whitesmoke;
+}
+
+th {
+  width: 150px;
+  padding: 2px 5px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px 5px;
+  border: 1px solid black;
+  border-collapse: collapse;
 }
