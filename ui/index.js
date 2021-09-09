@@ -13,11 +13,19 @@ function callback(msg) {
 														'<td>' + 
 														msg["name"] +
 														'</td>' +
+														'<th>HP</th>' +
+														'<td>' +
+														msg["hp"] +
+														'</td>' +
 														'</tr>' +
 														'<tr>' + 
 														'<th>Generation</th>' + 
 														'<td>' +
 														msg["generation"] +
+														'</td>' +
+														'<th>Attack</th>' +
+														'<td>' +
+														msg["attack"] +
 														'</td>' +
 														'</tr>' +
 														'<tr>' +
@@ -25,11 +33,19 @@ function callback(msg) {
 														'<td>' +
 														msg["type_1"] +
 														'</td>' +
+														'<th>Defense</th>' +
+														'<td>' +
+														msg["defense"] +
+														'</td>' +
 														'</tr>' +
 														'<tr>' +
 														'<th>Type 2</th>' +
 														'<td>' +
 														msg["type_2"] +
+														'</td>' +
+														'<th>Special Attack</th>' +
+														'<td>' +
+														msg["sp_attack"] +
 														'</td>' +
 														'</tr>' +
 														'<tr>' + 
@@ -37,60 +53,30 @@ function callback(msg) {
 														'<td>' +
 														msg["height_m"] +
 														'</td>' +
-														'</tr>' +
-														'<tr>' +
-														'<th>Weight (kg)</th>' +
-														'<td>' +
-														msg["weight_kg"] +
-														'</td>' +
-														'</tr>' +
-														'<tr>' +
-														'<th>Total Points</th>' +
-														'<td>' +
-														msg["total_points"] +
-														'</td>' +
-														'</tr>' +
-														'<tr>' +
-														'<th>HP</th>' +
-														'<td>' +
-														msg["hp"] +
-														'</td>' +
-														'</tr>' +
-														'<tr>' +
-														'<th>Attack</th>' +
-														'<td>' +
-														msg["attack"] +
-														'</td>' +
-														'</tr>' +
-														'<tr>' +
-														'<th>Defense</th>' +
-														'<td>' +
-														msg["defense"] +
-														'</td>' +
-														'</tr>' +
-														'<tr>' +
-														'<th>Special Attack</th>' +
-														'<td>' +
-														msg["sp_attack"] +
-														'</td>' +
-														'</tr>' +
-														'<tr>' +
 														'<th>Special Defense</th>' +
 														'<td>' +
 														msg['sp_defense'] +
 														'</td>' +
 														'</tr>' +
 														'<tr>' +
+														'<th>Weight (kg)</th>' +
+														'<td>' +
+														msg["weight_kg"] +
+														'</td>' +
 														'<th>Speed</th>' +
 														'<td>' +
 														msg['speed'] +
 														'</td>' +
 														'</tr>' +
-														'<tr>' +
+														"<tr>" +
 														'<th>Catch Rate</th>' +
 														'<td>' +
 														msg['catch_rate'] +
 														'</td>' +
+														'<th>Total Points</th>' +
+														'<td>' +
+														msg["total_points"] +
+														'</td>' + 
 														'</tr>' +
 														'</table>'
 	}
