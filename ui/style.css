@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right bottom,  lightblue,  blue);
+  background-image: url("wallpaper.jpeg");
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
@@ -20,18 +20,18 @@ body {
 }
 
 .mew {
-  width: 60%;
-  margin-top: 30px;
+  width: 100px;
+  margin-top: 75px;
 }
 
 .snorlax {
-  width: 60%;
-  margin-top: 50px;
+  width: 100px;
+  margin-top: 75px;
 }
 
 .skitty {
-  width: 80%;
-  margin-top: 5px;
+  width: 200px;
+  margin-top: none;
 }
 
 .gifs {
@@ -60,7 +60,7 @@ body {
 }
 
 .input [type=text] {
-  background-color: #ADD8E6;
+  background-color: #FAA0A0;
 }
 
 .input [type=text]:focus {
@@ -68,7 +68,7 @@ body {
 }
 
 .input [type=button] {
-  background-color: #ADD8E6;
+  background-color: #FAA0A0;
   border: 1px solid black;
   padding: 2px 5px;
 }
@@ -81,7 +81,7 @@ body {
 #pokeinfo {
   padding: 5px 5px;
   border: 2px solid white;
-  background-color: #ADD8E6;
+  background-color: #FAA0A0;
 }
 
 table {
