@@ -2,7 +2,8 @@ function callback(msg) {
 	// Function to format and display pokemon info from python file
 	// If typo/not a valid pokemon, the python file returns a string
 	if (typeof msg === 'string') {
-		document.getElementById("pokeinfo").innerHTML = "Sorry, we couldn't find a Pokemon with that name."
+		document.getElementById("pokeinfo").innerHTML = "Sorry, we couldn't find a Pokemon with that name." +
+														"<img class='sadpoke' src='sad.gif' alt='Sad Squirtle GIF'>"
 	}
 	// If a valid pokemon name, it returns an object
 	else {
