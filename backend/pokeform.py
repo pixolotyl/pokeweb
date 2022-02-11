@@ -1,8 +1,10 @@
 from flask import Flask, send_from_directory, redirect, url_for, request, abort
 import csv
 
+
 ## Creating a server
 app = Flask(__name__)
+
 
 @app.route("/api/<name>")
 def pokeinfo(name):
@@ -18,10 +20,12 @@ def pokeinfo(name):
     ## Returning a random string if the name is not in the csv
     return "Hello"
 
+
 @app.route('/ui/<path>')
 def show_ui(path):
     ## Sending the ui files to the server ???
     return send_from_directory('../ui', path)
+    
 
 if __name__ == "__main__":
     app.run()
